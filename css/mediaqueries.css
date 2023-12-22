@@ -1,0 +1,294 @@
+/* Media Queries */
+@media only screen and (max-width:1490px) {
+    .home .info h1{
+        font-size: 2rem;
+    }
+    .home .info p{
+        font-size: 1.5rem;
+    }
+    @keyframes type-1 {
+        0%{
+            width: 0;
+            border-right-width : 0;
+        }
+        1%{
+            border-right-width :.15em ;
+        }
+        /* 50%{
+            width: 252px;
+        }
+        80%{
+            width: 252px;
+        } */
+        30%{
+            width: 212px;
+        }
+        45%{
+            width: 212px;
+        }
+        49%{
+            border-right-width : .15em ;
+        }
+        50%{
+            border-right-width : 0;
+            width: 0px;
+        }
+        100%{
+            width: 0;
+            border-right-width : 0;
+        }
+    }
+    @keyframes type-2 {
+        0%{
+            width: 0;
+            border-right-width : 0;
+        }
+        50%{
+            border-right-width : 0em;
+        }
+        51%{
+            border-right-width : .15em;
+            width: 0px;
+        }
+        /* 50%{
+            width: 252px;
+        }
+        80%{
+            width: 252px;
+        } */
+        80%{
+            width: 165px;
+        }
+        95%{
+            width: 165px;
+        }
+        99%{
+            border-right-width : .15em;
+            width: 0px;
+        }
+        100%{
+            width: 0;
+            border-right-width : 0;
+        }
+    }
+}
+@media only screen and (max-width:1290px){
+    .heading{
+        font-size: 2rem !important;
+    }
+    .skills .container{
+        grid-template-columns: auto auto auto;
+        /* justify-items: center; */
+        justify-content: space-evenly;
+    }
+    .skills .container .skill{
+        width: 100px;
+    }
+    .school h2{
+        font-size: 1.5rem;
+    }
+    .school{
+        padding-left: 0px;
+        padding-right: 20px;
+        height: 200px;
+        position: relative;
+    }
+    .school img{
+        height: 200px;
+    }
+    .school-info{
+        padding: 10px;
+    }
+    .home .image img{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    nav{
+        display: none !important;
+    }
+    header{
+        justify-content: center !important;
+    }
+    .heading{
+        font-size: 1.5rem !important;
+    }
+    .socials{
+        display: none;
+    }
+    .mobile-menu{
+        /* display: flex !important;
+        position: fixed;
+        flex-direction: column; */
+        /* right: 4vw; */
+        /* top: 40vh;
+        z-index: 12; */
+        padding: 8px 3px;
+        animation: entry 500ms 2000ms 1 forwards !important;
+    }
+    @keyframes entry {
+        0%{
+            right: -10vw;
+        }
+        100%{
+            right: 4vw;
+        }
+    }
+    .mobile-menu a i{
+        font-size : 30px;
+        margin: 15px 5px;
+        color: white;
+        /* background-color: white; */
+        /* border-radius: 50%; */
+    }
+    .mobile-menu a i:active{
+        color: gray;
+    }
+    .home, .skills, .about, .education, .contact, footer{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .home{
+        flex-direction: column-reverse;
+    }
+    .home .image{
+        height: auto;
+        margin: 30px auto;
+        width: auto;
+    }
+    .home .image img{
+        height: 33vW;
+    }
+    .info{
+        width: 240px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .info .hire{
+        margin: 20px auto 30px;
+        padding: 0px;
+        font-size: 1rem;
+    }
+    .skills{
+        padding: 20px auto;
+    }
+    .skills .container{
+        /* padding: 0px; */
+        margin: 5px;
+    }
+    .skill{
+        min-width: 10px;
+        padding: 10px;
+        width: 80px !important;
+    }
+    .skill p{
+        font-size: 1rem;
+    }
+    .skill img{
+        /* min-width:auto; */
+        height: 40px;
+    }
+    .about{
+        padding: 30px 0px;
+    }
+    .about .content img{
+        height: 33vw;
+    }
+    .about .content{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .about .details{
+        padding: 0px;
+        margin: 0px;
+        font-size: 1rem;
+    }
+    .about .details h4{
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+    .education{
+        padding: 30px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .school-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .school{
+        flex-direction: column;
+        width: 70vw;
+        margin: 20px 0px;
+        height: auto;
+        padding: 0px;
+    }
+    .school img{
+        width: 70vw;
+        height: auto;
+        padding: 0px;
+    }
+    .school-info{
+        padding-right: 0px;
+        text-wrap: wrap;
+        padding: 20px;
+    }
+    .school-info h2{
+        font-size: 1.25rem;
+    }
+    .school-info p{
+        font-size: 1rem;
+    }
+    .school-info h3{
+        font-size: 1rem;
+    }
+    .contact{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .contact div{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact .image{
+        height: 33vw;
+    }
+    .contact .image img{
+        height: 100%;
+        width: auto;
+    }
+    .contact-details{
+        padding: 0px;
+        width: 65%
+    }
+    footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .container h3{
+        font-size: 1.25rem;
+    }
+    footer .container p, footer .container a{
+        font-size: 1rem;
+    }
+    .credits p{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:460px) {
+    .mobile-menu{
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width:450px) {
+    footer .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
